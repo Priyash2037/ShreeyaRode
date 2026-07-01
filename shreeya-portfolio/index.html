@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shreeya Rode — Frontend Developer specializing in React and enterprise web applications." />
+  <title>Shreeya Rode — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">Shreeya.</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content fade-in-up">
+        <h1 class="hero-name">Shreeya Rode</h1>
+        <h2 class="hero-subtitle">Frontend Developer</h2>
+        <p class="hero-tagline">
+          I build scalable enterprise web applications, focusing on intuitive user interfaces and solid architecture.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-container reveal">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <p>
+            Hi, I'm Shreeya. I'm a ReactJS Developer with over 4.5 years of experience specializing in the development of scalable enterprise web applications. I have a strong background in translating complex business workflows into user-friendly interfaces and collaborating within Agile environments.
+          </p>
+          <p>
+            My core technical expertise revolves around frontend development using ReactJS, Redux, and HTML, paired with UI libraries like Tailwind CSS, Material UI, Leaflet, and Recharts.
+          </p>
+          <p>
+            Beyond coding, I act as a direct bridge between business stakeholders and development teams, gathering requirements and coordinating task execution via Jira while maintaining quality through thorough code reviews.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-container reveal">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Automobile Processes Suite</h3>
+            <p>14+ internal and dealer-facing applications for the automotive sector. Successfully handled delivery tracking, price quotes, and aftermarket operations.</p>
+            <div class="project-tech"><span>ReactJS</span><span>Tailwind</span><span>Jira</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Warehouse Floorplan Tracker</h3>
+            <p>Standalone application featuring a Leaflet map module used for interactive floorplan mapping and real-time IoT/RFID device tracking.</p>
+            <div class="project-tech"><span>ReactJS</span><span>Redux</span><span>Leaflet</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Enterprise Docs Retrieval</h3>
+            <p>Complex retrieval screens with comprehensive form validation and multi-format (PDF, Excel) download capabilities tied to admin rights.</p>
+            <div class="project-tech"><span>ReactJS</span><span>Redux</span><span>CSS</span></div>
+          </article>
+          <article class="project-card">
+            <h3>Internal Operations Dashboard</h3>
+            <p>Custom internal dashboards built from scratch using Recharts to display interactive bar, doughnut, and line charts for hiring statistics and competencies.</p>
+            <div class="project-tech"><span>ReactJS</span><span>Recharts</span><span>CSS</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-container reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">Jan 2024 — Present</span>
+            <h3>Feature Owner & Developer <span class="timeline-company">@ Automotive Sector</span></h3>
+            <ul>
+              <li>Worked on more than 14 internal and dealer-facing applications for the automotive sector, focusing on application ownership and scalability.</li>
+              <li>Developed modules that successfully handled delivery tracking, price quotes, and aftermarket operations.</li>
+              <li>Acted as a direct bridge between business stakeholders and development teams, gathering requirements and coordinating task execution via Jira.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Jan 2023 — Dec 2024</span>
+            <h3>UI Developer <span class="timeline-company">@ Warehouse Activities</span></h3>
+            <ul>
+              <li>Developed a standalone application featuring a Leaflet map module used for interactive floorplan mapping.</li>
+              <li>Implemented real-time IoT/RFID device tracking, device configuration, and status reporting.</li>
+              <li>Consistently utilized Redux to manage complex application states efficiently across various project modules.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Dec 2021 — Nov 2022</span>
+            <h3>UI Developer <span class="timeline-company">@ Enterprise Documents</span></h3>
+            <ul>
+              <li>Developed complex retrieval screens from scratch using internal CSS components and Redux architecture for state management.</li>
+              <li>Designed complex Report search screens with comprehensive form validation and multi-format (PDF, Excel) download capabilities tied to admin rights.</li>
+              <li>Responsible for conducting code reviews to maintain team quality and consistency.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Sept 2021 — Nov 2021</span>
+            <h3>Research Intern <span class="timeline-company">@ IIIT Hyderabad</span></h3>
+            <ul>
+              <li>Completed a research internship focused on Research & AI, developing a multilingual translation tool using NLP.</li>
+              <li>Successfully enabled translations from German, Japanese, Hindi, and Marathi into English.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & EDUCATION -->
+    <section class="section" id="skills">
+      <div class="section-container reveal">
+        <h2 class="section-title">Skills & Education</h2>
+        <div class="skills-edu-layout">
+          <div class="skills-list">
+            <div class="skill-group">
+              <h4>Frontend</h4>
+              <p>ReactJS, Redux, HTML</p>
+            </div>
+            <div class="skill-group">
+              <h4>UI & Libraries</h4>
+              <p>Tailwind CSS, Material UI, Leaflet, Recharts</p>
+            </div>
+            <div class="skill-group">
+              <h4>Tools & Management</h4>
+              <p>Figma, GitLab, Bitbucket, Jira</p>
+            </div>
+          </div>
+          <div class="education-block">
+            <h4>Information Technology (B.E.)</h4>
+            <p>St. Vincent College of Engineering and Technology, Nagpur</p>
+            <span class="edu-meta">2017 - 2021 | CGPA: 8.5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-container reveal">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p>Whether you have a role in mind, a project idea, or just want to say hello, feel free to reach out.</p>
+            <div class="contact-links">
+              <a href="mailto:shreeyarode02@gmail.com">shreeyarode02@gmail.com</a>
+              <span>+91 9822848439</span>
+              <a href="https://www.linkedin.com/in/rode-shreeya/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" id="contact-name" placeholder="Name" required />
+            <input type="email" id="contact-email" placeholder="Email" required />
+            <textarea id="contact-message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" id="contact-submit"><span class="btn-label">Send Message</span></button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Shreeya Rode &copy; <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
